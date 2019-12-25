@@ -5,8 +5,8 @@ var port = process.env.PORT || 8080
 
 app.use(express.static(__dirname));
 
-app.get("./src",function(req,res){
-  res.render("App.js");
+app.get("./public",function(req,res){
+  res.render("index");
 })
 
 app.listen(port, function(){
